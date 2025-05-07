@@ -85,9 +85,50 @@
                         <option value="seed">seed</option>
                         <option value="rtrt">rtrt</option>
                     </select>
+                </div>
+                <div class="input_grp">
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
             </form>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+    
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+    
+                const companyName = document.getElementById("company_name").value.trim();
+                const website = document.getElementById("website").value.trim();
+                const description = document.getElementById("company-description").value.trim();
+                const industry = document.getElementById("industry").value;
+                const teamSize = document.getElementById("team_size").value;
+                const location = document.getElementById("location").value;
+                const foundedYear = document.getElementById("year").value;
+                const fundingStage = document.getElementById("fuding_stage").value;
+    
+                if (
+                    companyName === "" ||
+                    website === "" ||
+                    description === "" ||
+                    industry === "" ||
+                    teamSize === "" ||
+                    location === "" ||
+                    foundedYear === "" ||
+                    fundingStage === ""
+                ) {
+                    alert("Please fill in all required fields.");
+                    return;
+                }
+    
+                alert("Form submitted successfully!");
+                form.submit();
+            });
+        });
+    </script>
+    
 </body>
 
 </html>

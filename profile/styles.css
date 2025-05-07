@@ -14,8 +14,8 @@
     margin: 0 auto;
     font-family: sans-serif;
     padding: 10px;
-    /* margin-top:20px;
-    margin-bottom:20px; */
+    margin-top:20px;
+    margin-bottom:20px;
     overflow-y: hidden;
     background: rgb(98, 170, 242);
 }
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     /* background-color: #F8F9FA; */
     border-radius: inherit;
     background: skyblue;
@@ -102,7 +102,7 @@
 .input_grp input,
 .input_grp select,
 .input_grp textarea {
-    padding: 10px;
+    padding: 13px;
     border: 1px solid #00000014;
     border-radius: 5px;
     margin-top: 10px;
@@ -118,4 +118,20 @@
     outline: none;
     border: 1px solid #BABBBD;
     color: #000000;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(0, 128, 0, 0.785);
 }
