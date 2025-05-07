@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    /* background-color: aliceblue; */
+    max-width: 1080px !important;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding: 10px;
+    /* margin-top:20px;
+    margin-bottom:20px; */
+    overflow-y: hidden;
+    background: rgb(98, 170, 242);
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #F8F9FA; */
+    border-radius: inherit;
+    background: skyblue;
+    outline: 20px solid white;
+
+}
+
+.header p {
+    color: #4D5154;
+    padding-top: 5px;
+}
+
+.header-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* padding-left: 20px; */
+
+}
+
+/* .company-logo {
+    width: 30px;
+    height: auto;
+} */
+
+
+.input_grp,
+.form_header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* margin: 10px; */
+
+}
+
+.content {
+    border: 1px solid #00000014;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form_header {
+    border-bottom: 0.1px solid #00000014;
+}
+
+.form_header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212529;
+    line-height: 30px;
+}
+
+.form_header p {
+    font-size: 14px;
+    color: #4D5154;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+.input_grp label {
+    font-size: 18px;
+    color: #444647;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.input_grp input,
+.input_grp select,
+.input_grp textarea {
+    padding: 10px;
+    border: 1px solid #00000014;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #BABBBD;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.input_grp input,
+.input_grp select,
+.input_grp textarea:focus {
+    outline: none;
+    border: 1px solid #BABBBD;
+    color: #000000;
+}
